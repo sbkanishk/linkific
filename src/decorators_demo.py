@@ -15,3 +15,5 @@ class Employee:
     @classmethod
     def get_company(cls):
         return cls.company
+    
+    # Git workflow practice
