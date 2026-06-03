@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 This repository is used to practice Git branching, merging, rebasing, and collaboration workflows.
 
-<<<<<<< HEAD
+
 ## Main Branch Update
 Added from main branch.
 
