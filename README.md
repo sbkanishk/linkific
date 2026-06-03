@@ -26,6 +26,3 @@ pip install -r requirements.txt
 ## Git Practice
 
 This repository is used to practice Git branching, merging, rebasing, and collaboration workflows.
-
-## Team A Change
-This line was added by Team A.
