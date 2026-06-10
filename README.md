@@ -1,4 +1,4 @@
-# Linkific - Backend Engineering Bootcamp 🚀
+# Linkific - Backend Engineering 🚀
 
 Welcome to my master repository tracking my daily journey through backend development! 
 
