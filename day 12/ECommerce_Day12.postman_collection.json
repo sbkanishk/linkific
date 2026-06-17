@@ -1,0 +1,65 @@
+{
+	"info": {
+		"name": "Linkific Day 12 E-Commerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth - Register Admin",
+			"request": {
+				"method": "POST",
+				"url": "http://127.0.0.1:8000/register",
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"superadmin\",\n  \"email\": \"admin2@shop.com\",\n  \"password\": \"secret123\",\n  \"role\": \"admin\"\n}",
+					"options": { "raw": { "language": "json" } }
+				}
+			}
+		},
+		{
+			"name": "Auth - Login Admin",
+			"request": {
+				"method": "POST",
+				"url": "http://127.0.0.1:8000/login",
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin\",\n  \"email\": \"admin@shop.com\",\n  \"password\": \"admin123\"\n}",
+					"options": { "raw": { "language": "json" } }
+				}
+			}
+		},
+		{
+			"name": "Products - Get All with Filters",
+			"request": {
+				"method": "GET",
+				"url": {
+					"raw": "http://127.0.0.1:8000/products?page=1&limit=10&sort_by=price_asc",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["products"],
+					"query": [
+						{ "key": "page", "value": "1" },
+						{ "key": "limit", "value": "10" },
+						{ "key": "sort_by", "value": "price_asc" }
+					]
+				}
+			}
+		},
+		{
+			"name": "Categories - Create (Requires Bearer Token)",
+			"request": {
+				"method": "POST",
+				"url": "http://127.0.0.1:8000/categories",
+				"header": [
+					{ "key": "Authorization", "value": "Bearer <YOUR_TOKEN_HERE>", "type": "text" }
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Home Decor\",\n  \"description\": \"Fine furniture and ornaments\"\n}",
+					"options": { "raw": { "language": "json" } }
+				}
+			}
+		}
+	]
+}
