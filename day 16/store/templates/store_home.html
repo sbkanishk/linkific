@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>My Django Store 🛍️</h1>
+    
+    <h3>Available Products:</h3>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>{{ product.name }}</strong> - ${{ product.price }} <br>
+                <small>Stock: {{ product.stock }} left</small>
+            </li>
+        {% endfor %}
+    </ul>
+    
+</body>
+</html>

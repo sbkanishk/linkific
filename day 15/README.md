@@ -9,3 +9,25 @@ Upgraded the application architecture by integrating the **Django REST Framework
 * **Pagination & Filtering:** Configured global pagination and integrated `django_filters` for advanced searching and ordering capabilities directly from the URL parameters.
 * **Multi-App Architecture:** Successfully scaled the API across two independent Django apps (`store` and `blog`).
 * **API Testing:** Built and tested endpoints using Postman to verify HTTP status codes (`200 OK`, `201 Created`).
+
+🔗 . Store API Endpoints
+Once the server is running, you can click or copy these links directly into your browser or Postman to view and interact with the JSON data:
+
+Products: http://127.0.0.1:8000/store/products/
+
+Categories: http://127.0.0.1:8000/store/categories/
+
+Orders: http://127.0.0.1:8000/store/orders/
+
+Carts: http://127.0.0.1:8000/store/carts/
+
+Reviews: http://127.0.0.1:8000/store/reviews/
+
+🔗 . Blog API Endpoints
+Authors: http://127.0.0.1:8000/blog/authors/
+
+Posts: http://127.0.0.1:8000/blog/posts/
+
+Comments: http://127.0.0.1:8000/blog/comments/
+
+python manage.py runserver
