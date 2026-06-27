@@ -1,0 +1,5 @@
+async_env/
+__pycache__/
+*.db
+api_logs.txt
+.env
